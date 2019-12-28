@@ -25,6 +25,10 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Board
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msm8953
+
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 1920
@@ -353,7 +357,6 @@ PRODUCT_PACKAGES += \
     ims_ext_common.xml
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext \
     ims-ext-common_system
 
 # Seccomp policy
